@@ -1,0 +1,7 @@
+<div *ngIf="!loginService.isLogged">
+  <button (click)="loginService.login()">Login</button>
+</div>
+<div *ngIf="loginService.isLogged">
+  <button (click)="loginService.logout()">Logout</button>
+</div>
+<a routerLink="secreto">Pagina Protegida</a>
